@@ -25,9 +25,9 @@ let messages = [{ role: "system", content: "You are a helpful assistant." }];
 const helpMessage =
     "Usage: cmdlai [command]\n\n" +
     "Available commands:\n" +
+    "  chat             - Start a conversation with the AI assistant. This command will enter an interactive chat session.\n" +
     "  setApiKey        - Set your OpenAI API key. This will prompt you to enter and save your OpenAI API key for future requests.\n" +
     "  setModel         - Set the OpenAI model to use for your requests. You will be shown a list of supported models to choose from.\n" +
-    "  chat             - Start a conversation with the AI assistant. This command will enter an interactive chat session.\n" +
     "  setContextLength - Set the context length for conversations. This will determine how many messages the AI assistant will remember.\n" +
     "  help             - Show this help message.\n\n";
 
