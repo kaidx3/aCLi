@@ -1,8 +1,12 @@
 {
   "name": "cmdlai",
+  "type": "module",
   "version": "1.0.0",
   "description": "A simple command line interface for communicating with openAI gpt models.",
-  "main": "index.js",
+  "main": "cli.js",
+  "bin": {
+    "cmdlai": "./src/cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,5 +28,10 @@
   "bugs": {
     "url": "https://github.com/kaidx3/cmdlai/issues"
   },
-  "homepage": "https://github.com/kaidx3/cmdlai#readme"
+  "homepage": "https://github.com/kaidx3/cmdlai#readme",
+  "dependencies": {
+    "clcolors": "^1.0.3",
+    "clprompt": "^1.0.0",
+    "clstyles": "^1.0.6"
+  }
 }
