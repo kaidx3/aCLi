@@ -9,7 +9,7 @@ To install globally, use:
 npm i -g cmdlai
 ```
 
-## usage
+## Usage
 
 The command:
 
