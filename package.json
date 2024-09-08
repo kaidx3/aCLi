@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kaidx3/cmdlAI.git"
+    "url": "git+https://github.com/kaidx3/cmdlai.git"
   },
   "keywords": [
     "AI",
@@ -22,7 +22,7 @@
   "author": "Kaiden Flaig",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kaidx3/cmdlAI/issues"
+    "url": "https://github.com/kaidx3/cmdlai/issues"
   },
-  "homepage": "https://github.com/kaidx3/cmdlAI#readme"
+  "homepage": "https://github.com/kaidx3/cmdlai#readme"
 }
