@@ -7,6 +7,7 @@ const __dirname = path.dirname(__filename);
 const modulePath = path.join(__dirname, "..");
 const openAIKeyJsonPath = path.join(modulePath, "openAIKey.json");
 const modelJsonPath = path.join(modulePath, "model.json");
+const contextLengthJsonPath = path.join(modulePath, "contextLength.json");
 
 const checkForOpenAIKeyJson = async () => {
     try {
@@ -26,6 +27,15 @@ const checkForModelJson = async () => {
     }
 };
 
+const checkForContextLengthJson = async () => {
+    try {
+        await fs.promises.access(contextLengthJsonPath);
+        return true;
+    } catch (err) {
+        return false;
+    }
+};
+
 const createOpenAIKeyJson = async (key) => {
     try {
         await fs.promises.writeFile(openAIKeyJsonPath, JSON.stringify({ key }));
@@ -39,6 +49,14 @@ const createModelJson = async (model) => {
         await fs.promises.writeFile(modelJsonPath, JSON.stringify({ model }));
     } catch (err) {
         throw new Error("An error occurred while saving the model.");
+    }
+};
+
+const createContextLengthJson = async (contextLength) => {
+    try {
+        await fs.promises.writeFile(contextLengthJsonPath, JSON.stringify({ contextLength }));
+    } catch (err) {
+        throw new Error("An error occurred while saving the context length.");
     }
 };
 
@@ -68,6 +86,19 @@ const getModelFromJson = async () => {
     }
 };
 
+const getContextLengthFromJson = async () => {
+    try {
+        if (!(await checkForContextLengthJson())) {
+            throw new Error("Context length not found.");
+        }
+        const contextLengthJson = await fs.promises.readFile(contextLengthJsonPath, "utf8");
+        const contextLength = JSON.parse(contextLengthJson);
+        return contextLength.contextLength;
+    } catch (err) {
+        throw new Error("An error occurred while reading the context length.");
+    }
+};
+
 export {
     checkForOpenAIKeyJson,
     createOpenAIKeyJson,
@@ -75,4 +106,7 @@ export {
     checkForModelJson,
     createModelJson,
     getModelFromJson,
+    checkForContextLengthJson,
+    createContextLengthJson,
+    getContextLengthFromJson,
 };

@@ -8,4 +8,16 @@ const exitWithCode = (message, code) => {
     process.exit(code);
 };
 
-export { wrapText, exitWithCode };
+function trimArrayToLength(arr, desiredLength) {
+    if (desiredLength < 0) {
+        desiredLength = 0;
+    }
+
+    while (arr.length > desiredLength) {
+        arr.shift();
+    }
+
+    return arr;
+}
+
+export { wrapText, exitWithCode, trimArrayToLength };
