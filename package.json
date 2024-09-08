@@ -1,0 +1,28 @@
+{
+  "name": "cmdlai",
+  "version": "1.0.0",
+  "description": "A simple command line interface for communicating with openAI gpt models.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaidx3/cmdlAI.git"
+  },
+  "keywords": [
+    "AI",
+    "OpenAI",
+    "GPT",
+    "cli",
+    "ChatGPT",
+    "Artificial",
+    "Intelligence"
+  ],
+  "author": "Kaiden Flaig",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaidx3/cmdlAI/issues"
+  },
+  "homepage": "https://github.com/kaidx3/cmdlAI#readme"
+}
