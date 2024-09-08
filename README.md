@@ -11,11 +11,13 @@ npm i -g cmdlai
 
 ## Usage
 
-The command:
-
 ```bash
-cmdlai
+cmdlai [command]
 ```
 
-will start the application. You will be prompted for an OpenAI API key upon first use.
+Commands:
+- **setApiKey**: Set your OpenAI API key. This will prompt you to enter and save your OpenAI API key for future requests.
+- **setModel**: Set the OpenAI model to use for your requests. You will be shown a list of supported models to choose from.
+- **chat**: Start a conversation with the AI assistant. This command will enter an interactive chat session.
+- **help**: Show the help message.
 
