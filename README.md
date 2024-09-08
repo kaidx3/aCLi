@@ -1,2 +1,2 @@
-# aCLi (Artificial Command Line Intelligence)
+# cmdlAI (Command Line Artificial Intelligence)
 A simple command line interface for communicating with openAI gpt models.
