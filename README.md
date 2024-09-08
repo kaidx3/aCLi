@@ -16,8 +16,9 @@ cmdlai [command]
 ```
 
 Commands:
+- **chat**: Start a conversation with the AI assistant. This command will enter an interactive chat session.
 - **setApiKey**: Set your OpenAI API key. This will prompt you to enter and save your OpenAI API key for future requests.
 - **setModel**: Set the OpenAI model to use for your requests. You will be shown a list of supported models to choose from.
-- **chat**: Start a conversation with the AI assistant. This command will enter an interactive chat session.
+- **setContextLength**: Set the context length for conversations. This will determine how many messages the AI assistant will remember.
 - **help**: Show the help message.
 
