@@ -17,7 +17,7 @@ const promptOpenAI = async (messages, apiKey, model) => {
         body: JSON.stringify({
             model: model,
             messages: messages,
-            max_tokens: 100,
+            max_tokens: 5000,
         }),
     });
 
